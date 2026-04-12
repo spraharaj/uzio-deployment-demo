@@ -4,3 +4,6 @@ syncWave: "0"
 service:
   type: ClusterIP
   port: 80
+
+httpRoute:
+  enabled: false
