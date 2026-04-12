@@ -1,2 +1,6 @@
 name: config-server
 syncWave: "0"
+
+service:
+  type: ClusterIP
+  port: 80
