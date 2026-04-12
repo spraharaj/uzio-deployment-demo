@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: uzio-microservices
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/spraharaj/uzio-deployment-demo.git
+    targetRevision: HEAD
+    path: charts
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
