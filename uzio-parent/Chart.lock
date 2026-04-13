@@ -18,4 +18,4 @@ dependencies:
   repository: file://../charts/timesheet-service
   version: 0.1.0
 digest: sha256:0c9a19eb8f1cbce23423bec386cc0350d629728b637c6e061744bd19816a89b5
-generated: "2026-04-13T11:54:31.004694597Z"
+generated: "2026-04-13T12:31:56.696649661Z"
