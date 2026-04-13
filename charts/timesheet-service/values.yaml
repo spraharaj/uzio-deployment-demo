@@ -1,2 +1,6 @@
 name: timesheet-service
 syncWave: "4"
+
+service:
+  type: ClusterIP
+  port: 80

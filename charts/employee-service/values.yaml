@@ -1,2 +1,6 @@
 name: employee-service
 syncWave: "3"
+
+service:
+  type: ClusterIP
+  port: 80

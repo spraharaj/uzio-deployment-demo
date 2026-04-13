@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: config-server
+  name: eureka-server
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/spraharaj/uzio-deployment-demo.git
     targetRevision: HEAD
-    path: charts/config-server
+    path: uzio-parent
   destination:
     server: https://kubernetes.default.svc
     namespace: default
