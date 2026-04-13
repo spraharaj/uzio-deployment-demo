@@ -1,0 +1,30 @@
+apiVersion: v2
+name: uzio-parent
+description: Parent chart for UZIO microservices
+type: application
+version: 0.1.0
+
+dependencies:
+  - name: config-server
+    version: 0.1.0
+    repository: "file://../charts/config-server"
+
+  - name: eureka-server
+    version: 0.1.0
+    repository: "file://../charts/eureka-server"
+
+  - name: api-gateway
+    version: 0.1.0
+    repository: "file://../charts/api-gateway"
+
+  - name: employee-service
+    version: 0.1.0
+    repository: "file://../charts/employee-service"
+
+  - name: payroll-service
+    version: 0.1.0
+    repository: "file://../charts/payroll-service"
+
+  - name: timesheet-service
+    version: 0.1.0
+    repository: "file://../charts/timesheet-service"
